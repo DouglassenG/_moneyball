@@ -1,0 +1,12 @@
+.container {
+    overflow-x: hidden;
+
+    &__image {
+
+        img {
+            width: 100%;
+            display: block;  
+            filter: brightness(75%);       
+        }
+    }
+}

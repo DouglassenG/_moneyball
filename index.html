@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moneyball</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href= "dist/css/main.css">
 </head>
 <body>
-    <h1>Moneyball</h1>    
-</body>
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./src/images/columbia_pictures.jpg" alt="Logo Columbia Pictures">
+            </h1>
+            <h2 class="header__title pulse">Moneyball</h2>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button" href="#meuBotao">O filme</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="container__image">
+            <img src="./src/images/logo_2.jpg" alt="Moneyball">           
+        </div>
+    </section>
+
+    <section id="meuBotao" class="shows img-fundo bg-escura">
+        <img src="" alt="">
+        <nav class="shows__tabs">
+            <button data-tab-button="elenco" class="shows__tabs__button">
+                Elenco
+            </button>
+            <button data-tab-button="trailer" class="shows__tabs__button shows__tabs__button--is-active">
+                Trailer
+            </button>
+            <button data-tab-button="sinopse" class="shows__tabs__button">
+                Sinopse
+            </button>
+        </nav>
+        <ul data-tab-id="elenco" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/brad_pitt.jpg" alt="Brad Pitt">
+                <h3>Brad Pitt</h3>
+                <p>Billy Beane</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/chris_pratt.jpg" alt="Chris Pratt">
+                <h3>Chris Pratt</h3>
+                <p>Scott Hatteberg</p>
+            </li>            
+            <li class="shows__list__item">
+                <img src="./src/images/jonah_hill.jpeg" alt="Jonah Hill">
+                <h3>Jonah Hill</h3>
+                <p>Peter Brand</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/Philip_Seymour_Hoffman.jpg" alt="Philip Seymour Hoffman">
+                <h3>Philip Hoffman</h3>
+                <p>Art Howe</p>
+            </li>
+        </ul>
+
+        <ul data-tab-id="trailer" class="shows__list shows__list--is-active">            
+            <li class="shows__list__item">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-4QPVo0UIzc?si=PjSiFiMpc1BZU_pm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </li>
+        </ul>
+
+        <ul data-tab-id="sinopse" class="shows__list">
+            <div>
+                <p>
+                    Billy Beane, gerente geral do Oakland Athletics, não está feliz com a derrota de seu time para o New York Yankees na pós-temporada de 2001. Com a iminente saída de seus principais jogadores, Beane tenta formular uma estratégia para criar um time competitivo para a temporada de 2002, porém esbarra no orçamento limitado do Athletics. Durante uma visita ao Cleveland Indians, Beane conhece Peter Brand, um jovem recém formado de Yale em economia que possui ideias radicais de como avaliar cada jogador. Beane testa a teoria de Brand perguntando se ele o teria escolhido no draft; Beane havia sido um jogador antes de se tornar gerente geral. Apesar dos olheiros o terem considerado um jogador fenomenal, sua carreira foi desapontadora. Depois de pensar um pouco, Brand responde que ele não o teria escolhido até a nona rodada, e que Beane deveria ter aceito a bolsa pra estudar em Stanford. Percebendo a oportunidade, Beane o contrata para ser seu assistente.
+                </p>
+            </div>
+        </ul>
+
+    </section>  
+
+    <footer class="footer">
+        <p>&copy; 2025 Todos os direitos reservados - Douglas Michelini Silva Rodrigues</p>
+    </footer>
+    <script src="./src/scripts/main.js"></script>
+</body> 
 </html>

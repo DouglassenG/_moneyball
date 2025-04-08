@@ -1,5 +1,54 @@
-$bgColor: rgb(55, 126, 207);
+@use 'variaveis';
+@use 'header';
+@use 'section1';
+@use 'section';
+@use 'shows';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: $bgColor;
+    font-family: Avenir, sans-serif;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.title {
+    font-weight: 700;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.footer {
+    background-color: variaveis.$corDeFundo1;
+    color: variaveis.$corTextoPrincipal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    p {
+        align-items: center;
+    }
+    @media (max-width: 768px){
+        font-size: 14px;
+    }
 }
