@@ -15,7 +15,7 @@ Este repositório resolve o desafio de apresentar informações (sinopse, elenco
 
 ## 🖼️ Demonstração Visual
 
-
+moneyball-lime.vercel.app/
 
 ## 🛠️ Tecnologias Utilizadas
 
